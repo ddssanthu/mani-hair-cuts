@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium haircuts, beard styling and grooming. Book your barber appointment today.">
+  <title>Royal Cuts | Premium Barbershop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">ROYAL<span>CUTS.</span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a>
+      <a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a href="#booking" class="btn btn-small">Book Now</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">✦ YOUR STYLE. YOUR SIGNATURE. ✦</p>
+        <h1>LOOK SHARP.<br><span>FEEL ROYAL.</span></h1>
+        <p class="hero-text">More than a haircut. Experience precision grooming, timeless style and premium service.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn">Book Appointment ↗</a>
+          <a href="#services" class="text-link">Explore Services →</a>
+        </div>
+        <div class="hero-note"><span class="gold">✦</span> Professional Barbers <span class="gold">✦</span> Premium Grooming</div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <p class="eyebrow">WHAT WE OFFER</p><h2>OUR <span>SERVICES</span></h2>
+      <p class="section-intro">The right cut makes all the difference.</p>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">✂</div><h3>Classic Haircut</h3><p>Clean cuts tailored to your personal style.</p><div class="service-bottom"><span>From ₹149</span><a href="#booking" data-service="Classic Haircut">Book ↗</a></div></article>
+        <article class="service-card"><div class="service-icon">♛</div><h3>Fade Haircut</h3><p>Sharp fades with clean, precise finishing.</p><div class="service-bottom"><span>From ₹199</span><a href="#booking" data-service="Fade Haircut">Book ↗</a></div></article>
+        <article class="service-card"><div class="service-icon">✦</div><h3>Beard Styling</h3><p>Neat trimming and a well-defined beard shape.</p><div class="service-bottom"><span>From ₹99</span><a href="#booking" data-service="Beard Styling">Book ↗</a></div></article>
+        <article class="service-card"><div class="service-icon">★</div><h3>Haircut + Beard</h3><p>A complete grooming experience in one visit.</p><div class="service-bottom"><span>From ₹249</span><a href="#booking" data-service="Haircut + Beard">Book ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">THE ROYAL EXPERIENCE</p><h2>YOUR STYLE.<br><span>OUR CRAFT.</span></h2>
+      <p>From timeless classics to modern fades, we focus on the details that make your look uniquely yours.</p>
+      <a href="#booking" class="btn">Visit Our Shop ↗</a>
+    </section>
+
+    <section class="booking section" id="booking">
+      <p class="eyebrow">YOUR NEXT LOOK STARTS HERE</p><h2>BOOK AN <span>APPOINTMENT</span></h2>
+      <p class="section-intro">Choose your service and preferred time.</p>
+      <form id="booking-form">
+        <label for="customer-name">Your name</label><input id="customer-name" name="name" placeholder="Enter your name" required>
+        <label for="customer-phone">Mobile number</label><input id="customer-phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required>
+        <label for="service">Choose a service</label><select id="service" name="service" required><option value="">Select service</option><option>Classic Haircut</option><option>Fade Haircut</option><option>Beard Styling</option><option>Haircut + Beard</option></select>
+        <label for="date">Preferred date</label><input id="date" name="date" type="date" required>
+        <label for="time">Preferred time</label><select id="time" name="time" required><option value="">Select time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option></select>
+        <button class="btn submit-btn" type="submit">Send Booking on WhatsApp ↗</button>
+        <p class="form-note">Your booking request opens in WhatsApp. The shop must confirm your appointment.</p>
+      </form>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">COME VISIT US</p><h2>LET'S GET YOU <span>FRESH.</span></h2>
+      <p>Replace this text with your actual shop address.</p><p>Opening hours: Update with your shop timings.</p>
+      <a href="#booking" class="btn">Book Your Visit ↗</a>
+    </section>
+  </main>
+  <footer><a href="#home" class="logo">ROYAL<span>CUTS.</span></a><p>© <span id="year"></span> Royal Cuts. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
